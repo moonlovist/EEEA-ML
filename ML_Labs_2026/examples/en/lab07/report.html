@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Next-token generation and attention</title><style>body{font:17px/1.6 system-ui;max-width:1100px;margin:30px auto;padding:20px;color:#20394d}pre{background:#edf4f8;padding:16px;white-space:pre-wrap}table{border-collapse:collapse}td,th{padding:8px;border:1px solid #bbcbd7}img{max-width:100%;height:auto}</style><body><h1>Next-token generation and attention</h1><p>Ting Tan · EEEA · Oct 2026</p><p>Measured reference run · fictional classroom data</p><pre>{
+  &quot;sentences&quot;: 7,
+  &quot;temperature&quot;: 1.0,
+  &quot;attention_weights&quot;: [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.3302384506733431,
+      0.6697615493266569,
+      0.0
+    ],
+    [
+      0.2482550782577231,
+      0.2482550782577231,
+      0.5034898434845538
+    ]
+  ],
+  &quot;attention_output&quot;: [
+    [
+      10.0,
+      0.0
+    ],
+    [
+      3.302384506733431,
+      6.697615493266569
+    ],
+    [
+      7.51744921742277,
+      7.51744921742277
+    ]
+  ],
+  &quot;generation_model&quot;: &quot;word-level empirical bigram&quot;,
+  &quot;attention_example&quot;: &quot;fixed illustrative Q, K, V; a separate calculation&quot;
+}</pre><h2>Next-token probabilities</h2><table><tr><th>context</th><th>token</th><th>probability</th></tr><tr><td>a</td><td>book</td><td>0.428571</td></tr><tr><td>a</td><td>note</td><td>0.571429</td></tr></table><h2>Generations</h2><table><tr><th>seed</th><th>temperature</th><th>text</th></tr><tr><td>1</td><td>1.0</td><td>the student writes a note</td></tr><tr><td>2</td><td>1.0</td><td>the student reads a book</td></tr><tr><td>3</td><td>1.0</td><td>the student</td></tr></table><p><img alt="Next-token generation and attention" src="generation_attention.png"></p><p>{&#x27;python&#x27;: &#x27;3.8.20&#x27;, &#x27;numpy&#x27;: &#x27;1.24.4&#x27;, &#x27;sklearn&#x27;: &#x27;1.3.2&#x27;, &#x27;matplotlib&#x27;: &#x27;3.7.4&#x27;}</p></body></html>

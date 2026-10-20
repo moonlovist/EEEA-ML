@@ -1,0 +1,72 @@
+{
+  "lab": 5,
+  "lang": "fr",
+  "title": "Clustering et échelles des variables",
+  "summary": {
+    "customers": 90,
+    "clusters": 2,
+    "mean": [
+      6.059555555555554,
+      153.2433333333333
+    ],
+    "scale_population_sd": [
+      3.4601293845786594,
+      117.72476764800932
+    ],
+    "comparison": "Compare inertia within a fixed feature space."
+  },
+  "tables": {
+    "raw centres": [
+      {
+        "cluster": 0,
+        "visits_month": 6.0,
+        "spend_eur_month": 76.23,
+        "count": 59
+      },
+      {
+        "cluster": 1,
+        "visits_month": 6.17,
+        "spend_eur_month": 299.81,
+        "count": 31
+      }
+    ],
+    "standardized centres": [
+      {
+        "cluster": 0,
+        "visits_month": 1.96,
+        "spend_eur_month": 72.53,
+        "count": 30
+      },
+      {
+        "cluster": 1,
+        "visits_month": 8.11,
+        "spend_eur_month": 193.6,
+        "count": 60
+      }
+    ],
+    "Scores": [
+      {
+        "space": "raw",
+        "k": 2,
+        "inertia_in_this_space": 232510.444,
+        "silhouette_in_this_space": 0.7115
+      },
+      {
+        "space": "standardized",
+        "k": 2,
+        "inertia_in_this_space": 95.604,
+        "silhouette_in_this_space": 0.5007
+      }
+    ]
+  },
+  "figures": [
+    "clustering.png"
+  ],
+  "elapsed_seconds": 0.2703,
+  "versions": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "sklearn": "1.3.2",
+    "matplotlib": "3.7.4"
+  }
+}

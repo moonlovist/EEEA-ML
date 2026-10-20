@@ -1,0 +1,61 @@
+{
+  "lab": 4,
+  "lang": "en",
+  "title": "Generalisation and model selection",
+  "summary": {
+    "min_samples_leaf": 5,
+    "selected_depth": "1",
+    "selection_rule": "highest validation accuracy; shallower candidate wins a tie",
+    "baseline_majority_validation_accuracy": 0.5
+  },
+  "tables": {
+    "Depth comparison": [
+      {
+        "depth": "1",
+        "training_accuracy": 0.8125,
+        "validation_accuracy": 0.791667,
+        "leaves": 2
+      },
+      {
+        "depth": "2",
+        "training_accuracy": 0.854167,
+        "validation_accuracy": 0.75,
+        "leaves": 4
+      },
+      {
+        "depth": "3",
+        "training_accuracy": 0.854167,
+        "validation_accuracy": 0.75,
+        "leaves": 6
+      },
+      {
+        "depth": "5",
+        "training_accuracy": 0.90625,
+        "validation_accuracy": 0.770833,
+        "leaves": 12
+      },
+      {
+        "depth": "10",
+        "training_accuracy": 0.90625,
+        "validation_accuracy": 0.770833,
+        "leaves": 12
+      },
+      {
+        "depth": "full",
+        "training_accuracy": 0.90625,
+        "validation_accuracy": 0.770833,
+        "leaves": 12
+      }
+    ]
+  },
+  "figures": [
+    "generalisation.png"
+  ],
+  "elapsed_seconds": 0.1306,
+  "versions": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "sklearn": "1.3.2",
+    "matplotlib": "3.7.4"
+  }
+}

@@ -1,0 +1,17 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Explorer une droite</title><style>body{font:18px/1.6 system-ui;max-width:1000px;margin:30px auto;padding:20px;color:#17384d}label{display:block;margin:16px}input{width:50%}svg{width:100%;max-height:460px;background:#f4f8fc}table{border-collapse:collapse;width:100%}td,th{border:1px solid #b3cbd8;padding:8px}pre{white-space:pre-wrap;background:#eef6f9;padding:16px}</style><p><a href="workbook.html">TP / Labs</a> · Ting Tan · EEEA · Oct 2026</p><h1>Explorer une droite</h1><p>Déplacer un curseur et prédire l’effet avant de lire le tableau. Chaque point représente un trajet observé. La droite donne les prédictions ; les segments verticaux montrent les résidus.</p><label>Pente w (min/km) <input id="w" type="range" min="0" max="15" step="0.1" value="10"><output id="wv"></output></label><label>Constante b (min) <input id="b" type="range" min="-10" max="10" step="0.1" value="0"><output id="bv"></output></label><button id="reset">Réinitialiser</button><svg id="plot" viewBox="0 0 720 470" role="img" aria-label="Explorer une droite"></svg><table><thead><tr><th>Distance (km)</th><th>Observé (min)</th><th>Prédit (min)</th><th>Résidu</th><th>Erreur absolue</th></tr></thead><tbody id="rows"></tbody></table><pre id="metrics"></pre><p>Cette activité explore manuellement les paramètres. Les formules calculent perte et gradient sur les trois observations affichées. La mise à jour proposée utilise un pas de 0,1.</p><script>
+const x=[1,2,3], y=[12,19,32], W=document.getElementById('w'), B=document.getElementById('b');
+function draw(){
+ const w=Number(W.value),b=Number(B.value),pred=x.map(v=>w*v+b),r=pred.map((v,i)=>v-y[i]);
+ document.getElementById('wv').textContent=w.toFixed(1);document.getElementById('bv').textContent=b.toFixed(1);
+ document.getElementById('rows').innerHTML=x.map((v,i)=>'<tr><td>'+v+'</td><td>'+y[i]+'</td><td>'+pred[i].toFixed(2)+'</td><td>'+r[i].toFixed(2)+'</td><td>'+Math.abs(r[i]).toFixed(2)+'</td></tr>').join('');
+ const loss=r.reduce((a,v)=>a+v*v,0)/6, mae=r.reduce((a,v)=>a+Math.abs(v),0)/3,dw=r.reduce((a,v,i)=>a+v*x[i],0)/3,db=r.reduce((a,v)=>a+v,0)/3;
+ document.getElementById('metrics').textContent='y_hat = '+w.toFixed(1)+' x + '+b.toFixed(1)+'\nMAE = '+mae.toFixed(4)+' min\nJ = mean(residual²)/2 = '+loss.toFixed(4)+' min²\ndJ/dw = '+dw.toFixed(4)+'; dJ/db = '+db.toFixed(4)+'\nw_new = w - 0.1 dw = '+(w-.1*dw).toFixed(4)+'\nb_new = b - 0.1 db = '+(b-.1*db).toFixed(4);
+ const sx=v=>70+180*v,sy=v=>400-5*v;
+ let svg='';for(let v=0;v<=60;v+=10)svg+='<line x1="70" x2="690" y1="'+sy(v)+'" y2="'+sy(v)+'" stroke="#d3e1e9"/><text x="25" y="'+(sy(v)+6)+'">'+v+'</text>';
+ svg+='<text x="18" y="35">min</text><text x="670" y="455">km</text><line x1="70" x2="70" y1="50" y2="450" stroke="#456"/>';
+ for(let v=0;v<=3;v++)svg+='<text x="'+sx(v)+'" y="445">'+v+'</text>';
+ svg+='<line x1="'+sx(0)+'" y1="'+sy(b)+'" x2="'+sx(3.4)+'" y2="'+sy(w*3.4+b)+'" stroke="#137bb1" stroke-width="3"/>';
+ x.forEach((v,i)=>{svg+='<line x1="'+sx(v)+'" x2="'+sx(v)+'" y1="'+sy(y[i])+'" y2="'+sy(pred[i])+'" stroke="#d0772a" stroke-width="2"/><circle cx="'+sx(v)+'" cy="'+sy(y[i])+'" r="6" fill="#c04735"/>';});document.getElementById('plot').innerHTML=svg;
+}
+W.addEventListener('input',draw);B.addEventListener('input',draw);document.getElementById('reset').onclick=()=>{W.value=10;B.value=0;draw();};draw();
+</script></html>

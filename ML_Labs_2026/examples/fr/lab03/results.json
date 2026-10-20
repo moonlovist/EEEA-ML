@@ -1,0 +1,142 @@
+{
+  "lab": 3,
+  "lang": "fr",
+  "title": "Classification et erreurs",
+  "summary": {
+    "kNN_confusion_true_rows_predicted_columns": [
+      [
+        22,
+        2
+      ],
+      [
+        5,
+        19
+      ]
+    ],
+    "Tree_confusion_true_rows_predicted_columns": [
+      [
+        18,
+        6
+      ],
+      [
+        2,
+        22
+      ]
+    ],
+    "neighbors": 5,
+    "depth": 3,
+    "validation_size": 48
+  },
+  "tables": {
+    "kNN erreurs": [
+      {
+        "validation_index": 11,
+        "x1": 0.714786,
+        "x2": -0.0173069,
+        "true": 1,
+        "predicted": 0
+      },
+      {
+        "validation_index": 13,
+        "x1": 1.0895344,
+        "x2": 0.2741468,
+        "true": 1,
+        "predicted": 0
+      },
+      {
+        "validation_index": 15,
+        "x1": 0.5460817,
+        "x2": 0.3242583,
+        "true": 0,
+        "predicted": 1
+      },
+      {
+        "validation_index": 18,
+        "x1": 0.1562837,
+        "x2": 0.5114415,
+        "true": 1,
+        "predicted": 0
+      },
+      {
+        "validation_index": 22,
+        "x1": -0.1866711,
+        "x2": 0.3933534,
+        "true": 1,
+        "predicted": 0
+      },
+      {
+        "validation_index": 34,
+        "x1": 0.9889262,
+        "x2": 0.1162723,
+        "true": 1,
+        "predicted": 0
+      }
+    ],
+    "Tree erreurs": [
+      {
+        "validation_index": 3,
+        "x1": 1.0581979,
+        "x2": 0.2157773,
+        "true": 0,
+        "predicted": 1
+      },
+      {
+        "validation_index": 9,
+        "x1": 1.2499634,
+        "x2": 0.0927162,
+        "true": 0,
+        "predicted": 1
+      },
+      {
+        "validation_index": 15,
+        "x1": 0.5460817,
+        "x2": 0.3242583,
+        "true": 0,
+        "predicted": 1
+      },
+      {
+        "validation_index": 18,
+        "x1": 0.1562837,
+        "x2": 0.5114415,
+        "true": 1,
+        "predicted": 0
+      },
+      {
+        "validation_index": 19,
+        "x1": 0.9305268,
+        "x2": 0.1501612,
+        "true": 0,
+        "predicted": 1
+      },
+      {
+        "validation_index": 22,
+        "x1": -0.1866711,
+        "x2": 0.3933534,
+        "true": 1,
+        "predicted": 0
+      }
+    ],
+    "Scores": [
+      {
+        "model": "kNN",
+        "training_accuracy": 0.9167,
+        "validation_accuracy": 0.8542
+      },
+      {
+        "model": "Tree",
+        "training_accuracy": 0.8854,
+        "validation_accuracy": 0.8333
+      }
+    ]
+  },
+  "figures": [
+    "classification.png"
+  ],
+  "elapsed_seconds": 0.375,
+  "versions": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "sklearn": "1.3.2",
+    "matplotlib": "3.7.4"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "lab": 7,
+  "lang": "fr",
+  "title": "Génération du prochain token et attention",
+  "summary": {
+    "sentences": 7,
+    "temperature": 1.0,
+    "attention_weights": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.3302384506733431,
+        0.6697615493266569,
+        0.0
+      ],
+      [
+        0.2482550782577231,
+        0.2482550782577231,
+        0.5034898434845538
+      ]
+    ],
+    "attention_output": [
+      [
+        10.0,
+        0.0
+      ],
+      [
+        3.302384506733431,
+        6.697615493266569
+      ],
+      [
+        7.51744921742277,
+        7.51744921742277
+      ]
+    ],
+    "generation_model": "word-level empirical bigram",
+    "attention_example": "fixed illustrative Q, K, V; a separate calculation"
+  },
+  "tables": {
+    "Probabilités du prochain token": [
+      {
+        "context": "un",
+        "token": "livre",
+        "probability": 0.428571
+      },
+      {
+        "context": "un",
+        "token": "texte",
+        "probability": 0.571429
+      }
+    ],
+    "Générations": [
+      {
+        "seed": 1,
+        "temperature": 1.0,
+        "text": "le professeur écrit un texte"
+      },
+      {
+        "seed": 2,
+        "temperature": 1.0,
+        "text": "le groupe"
+      },
+      {
+        "seed": 3,
+        "temperature": 1.0,
+        "text": "le groupe"
+      }
+    ]
+  },
+  "figures": [
+    "generation_attention.png"
+  ],
+  "elapsed_seconds": 0.2163,
+  "versions": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "sklearn": "1.3.2",
+    "matplotlib": "3.7.4"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "en": [
+    "the student reads a book",
+    "the student reads a note",
+    "the student writes a note",
+    "the teacher reads a book",
+    "the teacher writes a note",
+    "a book helps the student",
+    "a note helps the teacher"
+  ],
+  "fr": [
+    "le professeur lit un livre",
+    "le professeur lit un texte",
+    "le professeur écrit un texte",
+    "le groupe lit un livre",
+    "le groupe écrit un texte",
+    "un livre aide le groupe",
+    "un texte aide le professeur"
+  ]
+}

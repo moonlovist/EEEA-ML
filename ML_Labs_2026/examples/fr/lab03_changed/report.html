@@ -1,0 +1,25 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Classification et erreurs</title><style>body{font:17px/1.6 system-ui;max-width:1100px;margin:30px auto;padding:20px;color:#20394d}pre{background:#edf4f8;padding:16px;white-space:pre-wrap}table{border-collapse:collapse}td,th{padding:8px;border:1px solid #bbcbd7}img{max-width:100%;height:auto}</style><body><h1>Classification et erreurs</h1><p>Ting Tan · EEEA · Oct 2026</p><p>Exécution de référence mesurée · données pédagogiques fictives</p><pre>{
+  &quot;kNN_confusion_true_rows_predicted_columns&quot;: [
+    [
+      23,
+      1
+    ],
+    [
+      5,
+      19
+    ]
+  ],
+  &quot;Tree_confusion_true_rows_predicted_columns&quot;: [
+    [
+      18,
+      6
+    ],
+    [
+      2,
+      22
+    ]
+  ],
+  &quot;neighbors&quot;: 1,
+  &quot;depth&quot;: 3,
+  &quot;validation_size&quot;: 48
+}</pre><h2>kNN erreurs</h2><table><tr><th>validation_index</th><th>x1</th><th>x2</th><th>true</th><th>predicted</th></tr><tr><td>5</td><td>0.3762753</td><td>0.277336</td><td>1</td><td>0</td></tr><tr><td>11</td><td>0.714786</td><td>-0.0173069</td><td>1</td><td>0</td></tr><tr><td>13</td><td>1.0895344</td><td>0.2741468</td><td>1</td><td>0</td></tr><tr><td>18</td><td>0.1562837</td><td>0.5114415</td><td>1</td><td>0</td></tr><tr><td>34</td><td>0.9889262</td><td>0.1162723</td><td>1</td><td>0</td></tr><tr><td>38</td><td>0.8713018</td><td>-0.2182571</td><td>0</td><td>1</td></tr></table><h2>Tree erreurs</h2><table><tr><th>validation_index</th><th>x1</th><th>x2</th><th>true</th><th>predicted</th></tr><tr><td>3</td><td>1.0581979</td><td>0.2157773</td><td>0</td><td>1</td></tr><tr><td>9</td><td>1.2499634</td><td>0.0927162</td><td>0</td><td>1</td></tr><tr><td>15</td><td>0.5460817</td><td>0.3242583</td><td>0</td><td>1</td></tr><tr><td>18</td><td>0.1562837</td><td>0.5114415</td><td>1</td><td>0</td></tr><tr><td>19</td><td>0.9305268</td><td>0.1501612</td><td>0</td><td>1</td></tr><tr><td>22</td><td>-0.1866711</td><td>0.3933534</td><td>1</td><td>0</td></tr></table><h2>Scores</h2><table><tr><th>model</th><th>training_accuracy</th><th>validation_accuracy</th></tr><tr><td>kNN</td><td>1.0</td><td>0.875</td></tr><tr><td>Tree</td><td>0.8854</td><td>0.8333</td></tr></table><p><img alt="Classification et erreurs" src="classification.png"></p><p>{&#x27;python&#x27;: &#x27;3.8.20&#x27;, &#x27;numpy&#x27;: &#x27;1.24.4&#x27;, &#x27;sklearn&#x27;: &#x27;1.3.2&#x27;, &#x27;matplotlib&#x27;: &#x27;3.7.4&#x27;}</p></body></html>

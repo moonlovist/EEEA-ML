@@ -1,0 +1,35 @@
+ML & Deep Learning — learning record
+Ting Tan · EEEA · Oct 2026
+Name / partner / lab / date:
+
+1. Before running
+Task and required output:
+Feature(s), target, units:
+My prediction and reason:
+
+2. Worked example
+My hand calculation:
+Code output:
+Comparison and explanation:
+
+3. Controlled experiment
+Changed parameter:
+Value before / after:
+Fixed data split and other parameters:
+Result before / after:
+Figure and axes:
+My interpretation:
+
+4. Evaluation
+Model:
+Training / validation / test role:
+Metric and denominator:
+Software versions:
+A condition under which this conclusion applies:
+
+5. Individual explanation
+One concept I can now explain:
+One step I checked myself:
+One question to discuss:
+
+Submit this record with the saved Notebook and selected plots.

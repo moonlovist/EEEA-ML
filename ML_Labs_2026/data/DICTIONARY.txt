@@ -1,0 +1,29 @@
+Fictional teaching data / Données pédagogiques fictives
+Ting Tan · EEEA · Oct 2026
+
+walks.csv — 48 rows / lignes
+id: record identifier / identifiant
+ distance_km: distance before the journey, km / distance avant le trajet, km
+ duration_min: observed target, minutes / cible observée, minutes
+ split: train=28, validation=10, test=10
+
+classification.csv — 192 rows / lignes
+id: record identifier / identifiant
+x1, x2: dimensionless synthetic coordinates / coordonnées synthétiques sans unité
+label: class 0 or 1 / classe 0 ou 1
+split: train=96, validation=48, test=48
+The fixed synthetic two-arc geometry illustrates decision boundaries.
+La géométrie synthétique fixée en deux arcs illustre les frontières de décision.
+
+customers.csv — 90 rows / lignes
+id: record identifier / identifiant
+visits_month: average monthly visit frequency, visits/month / fréquence mensuelle moyenne, visites/mois
+spend_eur_month: average monthly spending, EUR/month / dépense mensuelle moyenne, EUR/mois
+Exploratory clustering uses all 90 rows.
+Le clustering exploratoire utilise les 90 lignes.
+
+corpus.json — 7 authored sentences in each language / 7 phrases rédigées par langue
+Tokens are whitespace-separated words. START and END mark sequence boundaries.
+Les tokens sont des mots séparés par des espaces. START et END marquent les limites.
+All records and texts are fictional classroom examples.
+Toutes les observations et les phrases sont des exemples fictifs de cours.

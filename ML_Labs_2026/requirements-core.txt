@@ -1,0 +1,5 @@
+# Classroom target: standard CPython 3.11, 3.12 or 3.13, Windows x64.
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.6.1
+matplotlib==3.10.3

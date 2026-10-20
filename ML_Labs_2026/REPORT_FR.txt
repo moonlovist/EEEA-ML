@@ -1,0 +1,35 @@
+ML & Deep Learning — fiche d’apprentissage
+Ting Tan · EEEA · Oct 2026
+Nom / partenaire / TP / date :
+
+1. Avant l’exécution
+Tâche et sortie demandée :
+Variables, cible, unités :
+Ma prédiction et sa justification :
+
+2. Exemple guidé
+Mon calcul manuel :
+Sortie du code :
+Comparaison et explication :
+
+3. Expérience contrôlée
+Paramètre modifié :
+Valeur avant / après :
+Découpage et autres paramètres conservés :
+Résultat avant / après :
+Figure et axes :
+Mon interprétation :
+
+4. Évaluation
+Modèle :
+Rôle entraînement / validation / test :
+Mesure et dénominateur :
+Versions logicielles :
+Condition d’application de cette conclusion :
+
+5. Explication individuelle
+Une notion que je peux expliquer :
+Une étape vérifiée personnellement :
+Une question à discuter :
+
+Remettre cette fiche avec le Notebook enregistré et les graphiques sélectionnés.

@@ -1,0 +1,3 @@
+﻿model;training_accuracy;validation_accuracy
+kNN;1.0;0.875
+Tree;0.8854;0.8333

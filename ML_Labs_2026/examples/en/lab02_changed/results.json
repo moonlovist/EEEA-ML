@@ -1,0 +1,88 @@
+{
+  "lab": 2,
+  "lang": "en",
+  "title": "Linear regression and errors",
+  "summary": {
+    "slope_min_per_km": 11.280988,
+    "intercept_min": 1.783817,
+    "validation_MAE_min": 2.569424,
+    "baseline_training_mean_MAE_min": 10.148929,
+    "manual_slope": 12.0,
+    "manual_intercept": 1.0,
+    "manual_validation_MAE_min": 3.094
+  },
+  "tables": {
+    "Validation predictions": [
+      {
+        "x_km": 0.69,
+        "y_min": 13.5,
+        "prediction_min": 9.568,
+        "absolute_error_min": 3.932
+      },
+      {
+        "x_km": 0.99,
+        "y_min": 12.02,
+        "prediction_min": 12.952,
+        "absolute_error_min": 0.932
+      },
+      {
+        "x_km": 1.18,
+        "y_min": 14.23,
+        "prediction_min": 15.095,
+        "absolute_error_min": 0.865
+      },
+      {
+        "x_km": 2.36,
+        "y_min": 26.62,
+        "prediction_min": 28.407,
+        "absolute_error_min": 1.787
+      },
+      {
+        "x_km": 2.94,
+        "y_min": 32.34,
+        "prediction_min": 34.95,
+        "absolute_error_min": 2.61
+      },
+      {
+        "x_km": 3.04,
+        "y_min": 39.21,
+        "prediction_min": 36.078,
+        "absolute_error_min": 3.132
+      },
+      {
+        "x_km": 3.14,
+        "y_min": 33.1,
+        "prediction_min": 37.206,
+        "absolute_error_min": 4.106
+      },
+      {
+        "x_km": 3.34,
+        "y_min": 35.47,
+        "prediction_min": 39.462,
+        "absolute_error_min": 3.992
+      },
+      {
+        "x_km": 3.53,
+        "y_min": 43.16,
+        "prediction_min": 41.606,
+        "absolute_error_min": 1.554
+      },
+      {
+        "x_km": 4.41,
+        "y_min": 48.75,
+        "prediction_min": 51.533,
+        "absolute_error_min": 2.783
+      }
+    ]
+  },
+  "figures": [
+    "regression.png"
+  ],
+  "elapsed_seconds": 0.1588,
+  "versions": {
+    "python": "3.8.20",
+    "numpy": "1.24.4",
+    "sklearn": "1.3.2",
+    "matplotlib": "3.7.4"
+  }
+}
