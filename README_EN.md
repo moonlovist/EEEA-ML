@@ -1,5 +1,8 @@
 # Student guide · English
 
+<!-- current-session-index -->
+> **Session index:** [Session 1](sessions/session01/README.md) · [Session 2](sessions/session02/README.md). This page describes the original Lab 00–08 practice collection. For the new Session 2, use its [English lab guide](sessions/session02/lab/en/README.md).
+
 **Ting Tan · EEEA · Oct 2026 · L1–L2**
 
 [Home](README.md) · [Français](README_FR.md)

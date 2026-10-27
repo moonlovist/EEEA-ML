@@ -1,0 +1,9 @@
+case_id,probability,observed_class
+A,0.95,1
+B,0.85,1
+C,0.7,0
+D,0.6,1
+E,0.45,1
+F,0.3,0
+G,0.2,0
+H,0.1,0

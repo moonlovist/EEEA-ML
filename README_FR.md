@@ -1,5 +1,8 @@
 # Guide étudiant · Français
 
+<!-- current-session-index -->
+> **Séances :** [Séance 1](sessions/session01/README.md) · [Séance 2](sessions/session02/README.md). Cette page décrit la collection d’origine TP 00–08. Pour la nouvelle séance 2, utiliser le [guide du TP](sessions/session02/lab/fr/README.md).
+
 **Ting Tan · EEEA · Oct 2026 · L1–L2**
 
 [Accueil](README.md) · [English](README_EN.md)

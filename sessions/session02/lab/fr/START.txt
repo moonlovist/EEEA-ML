@@ -1,0 +1,18 @@
+TP 02 — De la régression à la classification
+Ting Tan · EEEA · Octobre 2026
+
+1. Extraire l’archive. Ouvrir START.html ou TP02_FR.pdf.
+2. Ouvrir 01_Demonstrations_FR.ipynb dans Jupyter ou l’importer dans https://colab.research.google.com/ .
+3. Exécuter dans l’ordre avec Maj+Entrée ; lire et expliquer les sorties.
+4. Ouvrir 02_Exercices_FR.ipynb ; compléter E1–E4 et les réponses écrites. B1–B3 approfondissent les notions.
+5. Redémarrer et tout exécuter ; enregistrer sous Nom_Prenom_TP02.ipynb.
+
+Installation locale (Python 3.10+ recommandé), dans un terminal du dossier :
+python -m pip install -r requirements.txt
+python -m notebook
+Sous Windows, si Python est accessible par le lanceur py, remplacer python par py dans les deux commandes.
+Utiliser un environnement Python fonctionnel déjà configuré si disponible.
+
+Dans Colab : Fichier > Importer un notebook, puis se connecter à un environnement Python. Enregistrer/télécharger le notebook avant de quitter.
+Aucun GPU ni clé API. Toutes les données sont incluses. Les CSV de data/ sont facultatifs.
+Le notebook de démonstration contient les exemples résolus. Le notebook d’exercices contient volontairement des fonctions TODO à compléter.

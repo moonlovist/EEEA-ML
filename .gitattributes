@@ -5,3 +5,5 @@
 *.html text eol=lf
 *.png binary
 *.zip binary
+*.pdf binary
+sessions/session02/**/*.html linguist-generated=true

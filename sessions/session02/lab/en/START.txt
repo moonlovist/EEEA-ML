@@ -1,0 +1,18 @@
+Lab 02 — From regression to classification
+Ting Tan · EEEA · October 2026
+
+1. Extract the archive. Open START.html or TP02_EN.pdf.
+2. Open 01_Demos_EN.ipynb in Jupyter or upload it to https://colab.research.google.com/ .
+3. Run cells from top to bottom with Shift+Enter; read and explain the outputs.
+4. Open 02_Exercises_EN.ipynb; complete E1–E4 and the written answers. B1–B3 extend the material.
+5. Restart and run all cells; save as Surname_Name_Lab02.ipynb.
+
+Local installation (Python 3.10+ recommended), in a terminal in this folder:
+python -m pip install -r requirements.txt
+python -m notebook
+On Windows, if Python is accessible through the py launcher, replace python with py in both commands.
+Use an existing working Python environment if one is already configured.
+
+In Colab, use File > Upload notebook and connect to a Python runtime. Save/download your edited notebook before leaving.
+No GPU or API key is needed. All data are included. CSV copies in data/ are optional.
+The demonstration notebook contains worked examples. The exercise notebook intentionally contains TODO functions to complete.

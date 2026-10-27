@@ -1,0 +1,8 @@
+Data dictionary
+
+lecture_linear.csv: distance in km; duration in minutes. Three lecture cases.
+lecture_logistic.csv: six lecture cases. class_over_30min=1 if duration_min>30.
+lecture_validation_scores.csv: eight separate constructed evaluation cases; probability and observed binary class. These scores do not come from fitting the six lecture cases.
+walks_train.csv, walks_validation.csv, walks_test.csv: synthetic E4 data, with 200/100/100 observations. distance_km is the feature; class_over_30min is the binary target. These are simulated examples, not observations of real people.
+
+The notebooks include or generate exactly these data; importing CSV is optional. Keep the three E4 splits separate.

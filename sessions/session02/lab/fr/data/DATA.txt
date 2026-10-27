@@ -1,0 +1,8 @@
+Dictionnaire des données
+
+lecture_linear.csv : distance en km ; durée en minutes. Trois cas du cours.
+lecture_logistic.csv : six cas du cours. class_over_30min=1 si duration_min>30.
+lecture_validation_scores.csv : huit cas d’évaluation construits séparément ; probabilité et classe observée. Ces scores ne proviennent pas de l’ajustement des six cas du cours.
+walks_train.csv, walks_validation.csv, walks_test.csv : données synthétiques de E4, avec 200/100/100 observations. distance_km est l’entrée ; class_over_30min est la cible binaire. Ce sont des simulations, pas des observations de personnes réelles.
+
+Les notebooks contiennent ou génèrent exactement ces données ; l’import CSV est facultatif. Garder les trois parties de E4 séparées.
